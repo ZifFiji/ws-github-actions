@@ -16,7 +16,7 @@ TESTS_SRC 	=	src/utils.c \
 
 OBJ 	=	$(SRC:.c=.o)
 
-NAME 	=	swapupcase
+NAME 	=	swapupcasehello
 
 CPPFLAGS	=	-I./include
 
