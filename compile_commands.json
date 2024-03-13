@@ -1,0 +1,41 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I./include",
+      "-c",
+      "-o",
+      "src/main.o",
+      "src/main.c"
+    ],
+    "directory": "/home/arthur/tek1/workshop/ws-github-actions",
+    "file": "/home/arthur/tek1/workshop/ws-github-actions/src/main.c",
+    "output": "/home/arthur/tek1/workshop/ws-github-actions/src/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I./include",
+      "-c",
+      "-o",
+      "src/utils.o",
+      "src/utils.c"
+    ],
+    "directory": "/home/arthur/tek1/workshop/ws-github-actions",
+    "file": "/home/arthur/tek1/workshop/ws-github-actions/src/utils.c",
+    "output": "/home/arthur/tek1/workshop/ws-github-actions/src/utils.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I./include",
+      "-c",
+      "-o",
+      "src/swapupcase.o",
+      "src/swapupcase.c"
+    ],
+    "directory": "/home/arthur/tek1/workshop/ws-github-actions",
+    "file": "/home/arthur/tek1/workshop/ws-github-actions/src/swapupcase.c",
+    "output": "/home/arthur/tek1/workshop/ws-github-actions/src/swapupcase.o"
+  }
+]
