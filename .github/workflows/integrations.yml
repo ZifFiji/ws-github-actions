@@ -33,6 +33,7 @@ jobs:
           exit 0
 
   compile:
+    name: Run Makefile
     runs-on: ubuntu-latest
     steps:
 
@@ -49,3 +50,23 @@ jobs:
             exit 1
           fi
           exit 0
+
+  run-tests:
+    runs-on: ubuntu-latest
+    name: Run Unit & Integration Tests
+    container: epitechcontent/epitech-docker:latest
+    needs: [compile, conding-style]
+
+    steps:
+
+      - name: Checkout GH Repo
+        uses: actions/checkout@v4
+
+      - name: Compile tests binaries
+        run: make compile_tests
+
+      - name: Run unit tests
+        run: ./unit_testing
+
+      - name: Run integration tests
+        run: ./integration_testing
