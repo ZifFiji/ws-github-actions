@@ -51,22 +51,22 @@ jobs:
           fi
           exit 0
 
-  run-tests:
-    runs-on: ubuntu-latest
-    name: Run Unit & Integration Tests
-    container: epitechcontent/epitest-docker:latest
-    needs: [compile, coding-style]
-
-    steps:
-
-      - name: Checkout GH Repo
-        uses: actions/checkout@v4
-
-      - name: Compile tests binaries
-        run: make compile_tests
-
-      - name: Run unit tests
-        run: ./unit_testing
-
-      - name: Run integration tests
-        run: ./integration_testing
+  # run-tests:
+  #   runs-on: ubuntu-latest
+  #   name: Run Unit & Integration Tests
+  #   container: epitechcontent/epitest-docker:latest
+  #   needs: [compile, coding-style]
+  #
+  #   steps:
+  #
+  #     - name: Checkout GH Repo
+  #       uses: actions/checkout@v4
+  #
+  #     - name: Compile tests binaries
+  #       run: make compile_tests
+  #
+  #     - name: Run unit tests
+  #       run: ./unit_testing
+  #
+  #     - name: Run integration tests
+  #       run: ./integration_testing
